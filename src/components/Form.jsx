@@ -2,8 +2,7 @@ import { useState } from "react";
 import styles from "./Form.module.css";
 import Input from "./Input/Input";
 import { regExp } from "./Input/RegExp";
-import NewInput from "./Input/NewInput";
-import EmptyFields from "./Input/EmptyFields";
+import Button from "./Button/Button";
 
 export default function Form() {
   const [name, setName] = useState("");
@@ -69,8 +68,8 @@ export default function Form() {
 
         <button onClick={Check}>Create account</button>
         <div>{user}</div>
+        <Button>Create account</Button>
       </div>
-      <NewInput />
     </>
   );
 }
